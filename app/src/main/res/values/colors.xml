@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="black_overlay">#F2F2F2</color>
+
+    <color name="color_528CFF">#F2F2F2</color>
+    <color name="color_normal_backgroug">#edf0f4</color>
+    <color name="course_divider">#EDEDED</color>
+    <color name="oper_bg_orange">#edcd94</color>
+    <color name="oper_bg_grey">#d6d5d7</color><!--不可操作的颜色-->
+</resources>

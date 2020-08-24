@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="roundedimageview">
+        <attr name="border_thickness" format="dimension" />
+        <attr name="border_inside_color" format="color" />
+        <attr name="border_outside_color" format="color"></attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="ToggleButton">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="offBorderColor" format="reference|color" />
+        <attr name="offColor" format="reference|color" />
+        <attr name="onColor" format="reference|color" />
+        <attr name="spotColor" format="reference|color" />
+        <attr name="animate" format="reference|boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="RedTextView">
+        <attr name="text" format="string" />
+    </declare-styleable>
+</resources>

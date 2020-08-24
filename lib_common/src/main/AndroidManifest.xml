@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leconssoft.common">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application>
+
+        <activity android:name=".scanning.android.CaptureActivity" />
+        <activity android:name=".baseUtils.customview.ChangePictureActivity" />
+        <activity android:name=".scanning.ScaningAct" />
+        <activity android:name=".base.WebViewActivity" />
+        <activity android:name=".update.DownloadView" />
+    </application>
+
+</manifest>

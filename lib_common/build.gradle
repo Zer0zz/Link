@@ -1,0 +1,54 @@
+apply plugin: "com.android.library"
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+    }
+    buildToolsVersion '28.0.3'
+    compileOptions {
+        sourceCompatibility javaVersion
+        targetCompatibility javaVersion
+    }
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    api "junit:junit:$rootProject.junitVersion"
+    api 'androidx.multidex:multidex:2.0.0'
+    api 'androidx.constraintlayout:constraintlayout:1.1.3'
+    api "com.squareup.okhttp3:okhttp:$rootProject.okhttpVersion"
+    api 'androidx.appcompat:appcompat:1.0.0'
+    api 'androidx.legacy:legacy-support-v4:1.0.0'
+    api "com.squareup.okhttp3:logging-interceptor:$rootProject.okhttpVersion"
+    api "com.alibaba:fastjson:$rootProject.fastjsonVersion"
+    api "io.reactivex:rxandroid:$rootProject.rxandroidVersion"
+    api "com.squareup.retrofit2:retrofit:$rootProject.retrofit2Version"
+    api "com.squareup.retrofit2:converter-gson:$rootProject.retrofit2Version"
+    api "com.squareup.retrofit2:adapter-rxjava:$rootProject.retrofit2Version"
+    api 'androidx.recyclerview:recyclerview:1.0.0'
+
+    api "com.nostra13.universalimageloader:universal-image-loader:$rootProject.universalimageloaderVersion"
+    api "com.github.bumptech.glide:glide:$rootProject.glideVersion"
+
+    //router
+    api "com.alibaba:arouter-api:$rootProject.routerVersion"
+    api 'com.google.android.material:material:1.0.0'
+    api "com.jakewharton:butterknife:$rootProject.butterknifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeVersion"
+
+    api "cn.droidlover:qtcontentlayout:1.0.3"
+    api "cn.droidlover:XRecyclerView:1.0.0"
+    api "com.google.zxing:core:$rootProject.zxingVersion"
+    api "pub.devrel:easypermissions:$rootProject.easypermissionsVersion"
+    api "com.youth.banner:banner:$rootProject.bannerVersion"
+    api "org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:$rootProject.httpClientVersion"
+    api('com.squareup.retrofit2:converter-simplexml:2.5.0') {
+        exclude group: 'xpp3', module: 'xpp3'
+        exclude group: 'stax', module: 'stax-api'
+        exclude group: 'stax', module: 'stax'
+    }
+    api 'com.squareup.retrofit2:converter-scalars:2.5.0'
+}

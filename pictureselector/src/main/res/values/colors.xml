@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="action_text_color_normal" >#cfcfcf</color>
+    <color name="action_text_color_pressed" >#353535</color>
+    <color name="action_text_color_enabled" >#818585</color>
+
+    <color name="photopicker_background">#181819</color>
+    <color name="colorBlue2">#2988CC</color>
+    <color name="colorGray">#6c6c6c</color>
+
+    <color name="preview_mock">#9a000000</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_afff">#afff</color>
+</resources>

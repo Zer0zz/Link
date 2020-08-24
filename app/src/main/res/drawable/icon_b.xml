@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认时的背景图片-->
+    <item android:state_selected="false" android:drawable="@drawable/icon_app_contact_unselected" />
+    <!--选中时的图片背景-->
+    <item android:state_selected="true"   android:drawable="@drawable/icon_app_contact_selected" />
+</selector>

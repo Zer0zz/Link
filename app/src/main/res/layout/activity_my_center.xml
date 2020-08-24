@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".mycenter.MyCenterActivity">-->
+
+
+<!--    <com.google.android.material.appbar.AppBarLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="260dp">-->
+
+<!--        <com.google.android.material.appbar.CollapsingToolbarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"-->
+<!--            app:layout_scrollFlags="enterAlwaysCollapsed|scroll">-->
+
+<!--            <androidx.appcompat.widget.Toolbar-->
+<!--                android:id="@+id/toolbar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp"-->
+<!--                app:contentInsetStart="0dp"-->
+<!--                app:layout_collapseMode="none">-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:background="@android:color/white">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/titlename"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_centerInParent="true"-->
+<!--                        android:text="个人中心"-->
+<!--                        android:textColor="@android:color/background_dark"-->
+<!--                        android:textSize="18sp" />-->
+
+<!--                </RelativeLayout>-->
+<!--            </androidx.appcompat.widget.Toolbar>-->
+
+<!--            <com.google.android.material.tabs.TabLayout-->
+<!--                android:id="@+id/mtab_layout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:elevation="5dp"-->
+<!--                app:tabGravity="fill"-->
+<!--                app:tabIndicatorColor="@color/colorAccent"-->
+<!--                app:tabIndicatorFullWidth="false"-->
+<!--                app:tabIndicatorHeight="2dp"-->
+<!--                app:tabMode="fixed"-->
+<!--                app:tabSelectedTextColor="@android:color/black"-->
+<!--                app:tabTextColor="@color/colorAccent">-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="团课" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="私教" />-->
+
+<!--                <com.google.android.material.tabs.TabItem-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:text="教练" />-->
+
+<!--            </com.google.android.material.tabs.TabLayout>-->
+<!--        </com.google.android.material.appbar.CollapsingToolbarLayout>-->
+
+<!--    </com.google.android.material.appbar.AppBarLayout>-->
+
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/view_pager"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/transparent" />-->
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_scrollFlags="enterAlwaysCollapsed|scroll">
+
+            <RelativeLayout
+                android:id="@+id/banner_layout"
+                android:layout_width="match_parent"
+                android:layout_height="165dp"
+                android:layout_marginTop="50dp"
+                app:layout_collapseMode="parallax">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    app:image_scale_type="fit_xy"
+                    app:indicator_drawable_selected="@mipmap/banner_select_point"
+                    app:indicator_drawable_unselected="@mipmap/banner_unselect_point"
+                    app:indicator_height="5dp"
+                    app:indicator_margin="5dp"
+                    app:indicator_width="5dp" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:contentInsetStart="0dp"
+                app:layout_collapseMode="pin">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/white">
+
+
+                    <ImageView
+                        android:id="@+id/ivLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"
+                        android:paddingLeft="@dimen/loyout_margin"
+                        android:paddingRight="@dimen/loyout_margin"
+                        android:src="@mipmap/back_icon" />
+
+                    <TextView
+                        android:id="@+id/tvLeft"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/ivLeft"
+                        android:gravity="center"
+                        android:paddingRight="10dp"
+                        android:text="个人中心"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:visibility="visible" />
+
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_personal_profile"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginLeft="@dimen/loyout_margin_3"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="@dimen/loyout_margin_3"
+            android:background="@drawable/daka_shape"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/loyout_margin"
+            android:paddingRight="@dimen/loyout_margin"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/cart_icon"/>
+
+            <TextView
+                android:id="@+id/renzheng_info_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="健身房申请认证"
+                android:textColor="@color/color_333333"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/identify_btn"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_indenty_btn"
+                android:text="认 证"
+                android:textColor="@color/white"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_collect"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@android:color/white" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_collect"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

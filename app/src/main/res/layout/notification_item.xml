@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@mipmap/notifition_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/loyout_margin_8">
+
+        <TextView
+            android:id="@+id/notification_title_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:drawableLeft="@mipmap/notify_icon"
+            android:drawablePadding="@dimen/loyout_margin_8"
+            android:gravity="center_vertical"
+            android:text="系统通知"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/notification_time_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="19:10" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/notification_content_tv"
+        android:textSize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/loyout_margin_8"
+        android:text="您好，在19: 30有一节私教课，请提前20分钟预习上课内容，检查上课设备，并准时进入教室!" />
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/ll_viewArea"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:transitionName="appImage"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@color/transparent">
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:src="@mipmap/photo_viewer_back" >
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn_zoomin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:src="@mipmap/photo_viewer_tool_bar_smaller" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btn_zoomout"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:src="@mipmap/photo_viewer_tool_bar_bigger" >
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/btn_rotate"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_weight="1.0"
+                android:visibility="visible"
+                android:src="@mipmap/save_down" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

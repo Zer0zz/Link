@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/headSearch_layout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/search_bg"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <EditText
+                android:id="@+id/contact_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:drawableLeft="@mipmap/search_icon"
+                android:drawablePadding="8dp"
+                android:hint="搜索"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="2dp"
+                android:singleLine="true"
+                android:textSize="12sp"></EditText>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivRight"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@mipmap/location_icon" />
+
+    </RelativeLayout>
+
+    <com.leconssoft.common.widgt.RefreshAllLayout
+        android:id="@+id/refreshAllLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_f5f5f5"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:image_scale_type="fit_xy"
+                app:indicator_drawable_selected="@mipmap/banner_select_point"
+                app:indicator_drawable_unselected="@mipmap/banner_unselect_point"
+                app:indicator_height="5dp"
+                app:indicator_margin="5dp"
+                app:indicator_width="5dp" />
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="90dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="5dp"
+                app:tabGravity="fill"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicatorHeight="2dp"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorAccent"
+                app:tabTextColor="@android:color/black">
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="健身房" />
+                <!--  <com.google.android.material.tabs.TabItem
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:text="课程" />
+                 <com.google.android.material.tabs.TabItem
+                     android:layout_width="match_parent"
+                     android:layout_height="match_parent"
+                     android:text="教练" />-->
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/contentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/transparent" />
+        </LinearLayout>
+    </com.leconssoft.common.widgt.RefreshAllLayout>
+
+</LinearLayout>

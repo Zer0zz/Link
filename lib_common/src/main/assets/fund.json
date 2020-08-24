@@ -1,0 +1,51 @@
+﻿[
+  {
+    "areaName": "武汉",
+    "urlPath": "http://gjj.wuhan.gov.cn/wgw/index.html"
+  },
+  {
+    "areaName": "黄石",
+    "urlPath": "http://online.hsgjj.com:8038/wt-web/grlogin"
+  },
+  {
+    "areaName": "襄阳",
+    "urlPath": "path"
+  },
+  {
+    "areaName": "荆州",
+    "urlPath": "http://58.54.135.133/wt-web/login"
+  },
+  {
+    "areaName": "宜昌",
+    "urlPath": "http://gjj.yichang.gov.cn/list-61055-1.html"
+  },
+  {
+    "areaName": "荆门",
+    "urlPath": "http://zfgjj.jingmen.gov.cn/newcx/index.php?s=grcx"
+  },
+  {
+    "areaName": "孝感",
+    "urlPath": "http://www.xggjj.com/page/wzzs/wzzs_center/wzzs_wzqtzs_center_sy_2.jsp?wsbsGjjcx=wsbsGjjcx"
+  },
+  {
+    "areaName": "鄂州",
+    "urlPath": "http://gjj.ezhou.gov.cn/wt-web/grlogin.do"
+  },
+  {
+    "areaName": "黄冈",
+    "urlPath": "http://gjjfw.hg.gov.cn/HGGJJZHFW/Login/GRWTLOGIN"
+  },
+  {
+    "areaName": "随州",
+    "urlPath": "http://www.suizhougjj.cn/szgjjwt/login.jsp?yhlb=01"
+  },
+  {
+    "areaName": "恩施州",
+    "urlPath": "http://fwdt.gjj.enshi.gov.cn/wt-web-gr/grlogin"
+  },
+  {
+    "areaName": "潜江",
+    "urlPath": "http://219.138.158.181/qjgjjwt/"
+  }
+
+]

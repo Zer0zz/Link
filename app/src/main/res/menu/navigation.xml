@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_fri"
+        android:icon="@drawable/icon_a"
+        android:title="@string/title_fri" />
+
+    <item
+        android:id="@+id/navigation_sed"
+        android:icon="@drawable/icon_b"
+        android:title="@string/title_sen" />
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_thr"-->
+        <!--android:icon="@drawable/icon_c"-->
+        <!--android:title="@string/title_thr" />-->
+
+    <!--<item-->
+        <!--android:id="@+id/navigation_four"-->
+        <!--android:icon="@drawable/icon_d"-->
+        <!--android:title="@string/title_four" />-->
+
+</menu>

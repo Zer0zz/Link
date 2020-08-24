@@ -1,0 +1,13 @@
+<resources>
+    <string name="lib_name">超级入口</string>
+
+    <string name="msg_camera_framework_bug">相机被占用或没有相机权限，请检查</string>
+    <string name="button_ok">退出</string>
+    <string name="btn_cancel">取消</string>
+    <string name="share_string">分享</string>
+    <string name="save_string">保存</string>
+    <string name="tv_notify">提 示</string>
+    <string name="str_version_upgrade">版本更新</string>
+    <string name="alert_dialog_net_fail">抱歉，暂时无法处理您的请求，请检查网络连接。</string>
+    <string name="alert_tips_title">温馨提示</string>
+</resources>

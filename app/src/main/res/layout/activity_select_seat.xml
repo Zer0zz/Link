@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/loyout_margin"
+    tools:context=".selectseat.SelectSeatActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@mipmap/seat_certain_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/loyout_margin_8">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/loyout_margin_1"
+            android:gravity="center|left"
+            android:text="注意事项:"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/seat_certain_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/loyout_margin_8"
+        android:layout_weight="1"
+        android:background="@mipmap/seats_bg"
+        android:orientation="vertical">
+
+        <com.self.link.utils.wrapper.SeatView
+            android:id="@+id/seat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:columns="10"
+            app:horspaceing="5dp"
+            app:mySelectIcon="@mipmap/seat_myselect_icon"
+            app:rows="10"
+            app:selectedIcon="@mipmap/seat_selected_icon"
+            app:unselectIcon="@mipmap/seat_unselect_icon"
+            app:verspaceing="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/loyout_margin_8"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@mipmap/seat_unselect_icon"
+                android:text=":空位" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@mipmap/seat_selected_icon"
+                android:text=":已选" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@mipmap/seat_selecting_icon"
+                android:text=":选中"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:drawableLeft="@mipmap/seat_myselect_icon"
+                android:text=":你的" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/line111"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/seat_comfirm_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@mipmap/seat_comfirm_select_bg"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/seat_cancle_btn"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:background="@mipmap/seat_comfirm_select_bg"
+            android:text="弃选" />
+
+    </LinearLayout>
+
+</LinearLayout>

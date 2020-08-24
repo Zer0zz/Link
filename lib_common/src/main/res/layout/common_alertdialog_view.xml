@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_line"
+    android:minWidth="200dip"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/id_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:gravity="center"
+        android:text="提示"
+        android:textColor="@color/bg_blue" />
+
+    <LinearLayout
+        android:id="@+id/ll_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minHeight="100dp"
+        android:background="@drawable/white_line"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_tv_contents"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:minHeight="50dp"
+            android:padding="10dip"
+            android:text="内容"
+            android:textColor="@color/color_333333"
+            android:textSize="16dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_selectFile"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rb_isOpen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:textColor="@color/color_333333"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/rb_isDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_333333"
+                android:textSize="16dp" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/id_bt_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_bottom_lift"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:text="取消"
+                android:textColor="@color/bg_blue"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/id_bt_middle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/text_bottom"
+                android:gravity="center"
+                android:minHeight="30dp"
+                android:padding="1dp"
+                android:text="知道了"
+                android:textColor="@color/bg_blue"
+                android:textSize="14dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/id_bt_ok"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/text_bottom_right"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/bg_blue"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_addition_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/id_tv_center_contents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

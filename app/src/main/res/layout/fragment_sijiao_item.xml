@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_coath_item"
+    app:cardCornerRadius="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/coach_info_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="3dp"
+            android:gravity="center"
+
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/loyout_margin_8"
+            android:paddingBottom="@dimen/loyout_margin_8">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="@dimen/loyout_margin_8">
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="85dp"
+                    android:background="@drawable/shape_stroke_round_four_dp"
+                    android:gravity="center">
+
+                    <com.leconssoft.common.widgt.RoundImageView
+                        android:id="@+id/head_iv"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="center"
+                        android:src="@mipmap/defaul_head_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/name_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/loyout_margin_5"
+                        android:paddingTop="@dimen/loyout_margin_3"
+                        android:paddingRight="@dimen/loyout_margin_5"
+                        android:paddingBottom="@dimen/loyout_margin_3"
+
+                        android:text="李教练"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/basicInformation_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/loyout_margin_5"
+                        android:paddingTop="@dimen/loyout_margin_3"
+                        android:paddingRight="@dimen/loyout_margin_5"
+                        android:paddingBottom="@dimen/loyout_margin_3"
+                        android:text="肌肉|拉伸" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@mipmap/coach_level_bg"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/loyout_margin_5"
+                        android:paddingTop="@dimen/loyout_margin_3"
+                        android:paddingRight="@dimen/loyout_margin_5"
+                        android:paddingBottom="@dimen/loyout_margin_3"
+                        android:text="AAA金牌教练"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginLeft="@dimen/loyout_margin"
+                android:src="@mipmap/more_icon" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/shape_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/caurse_info_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/loyout_margin_8"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:paddingTop="@dimen/loyout_margin_3"
+                    android:paddingBottom="@dimen/loyout_margin_3"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/caurse_description_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/loyout_margin_8"
+                    android:text="" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/operate_caurse_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/oper_bg_orange"
+                android:gravity="center"
+                android:padding="@dimen/loyout_margin_3"
+                android:text="打卡"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
+
+

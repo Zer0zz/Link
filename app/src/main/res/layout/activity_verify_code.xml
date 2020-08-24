@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg"
+    android:orientation="vertical">
+
+    <!--返回按钮-->
+
+    <!--请输入验证码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="请输入验证码"
+            android:textColor="#464646"
+            android:textSize="25dp" />
+    </LinearLayout>
+    <!--验证码已发送到您的手机-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="验证码已发送到您的手机,请注意查收..."
+            android:textColor="#989898"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!--电话号码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:text="+86"
+            android:textColor="#989898"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/inputcode_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center|left"
+            android:text="15611727261"
+            android:textColor="#989898"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!--验证码-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="125dp"
+        android:layout_marginRight="35dp"
+        android:orientation="horizontal">
+
+        <com.wynsbin.vciv.VerificationCodeInputView
+            android:id="@+id/vciv_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:vciv_et_background="@mipmap/input_code_bg"
+            app:vciv_et_cursor_color="@color/colorPrimary"
+            app:vciv_et_height="50dp"
+            app:vciv_et_inputType="number"
+            app:vciv_et_number="6"
+            app:vciv_et_spacing="5dp"
+            app:vciv_et_text_color="@android:color/black"
+            app:vciv_et_text_size="18sp"
+            app:vciv_et_underline_default_color="@android:color/holo_green_dark"
+            app:vciv_et_underline_focus_color="@android:color/holo_blue_bright"
+            app:vciv_et_underline_height="2dp"
+            app:vciv_et_underline_show="false"
+            app:vciv_et_width="45dp" />
+    </LinearLayout>
+    <!--确 定-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="35dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/inputcode_next"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@mipmap/sure_btn"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!--4位数字验证码,倒计时-->
+
+    <TextView
+        android:id="@+id/inputcode_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="重新获取（20）"
+        android:textColor="#ff0000"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

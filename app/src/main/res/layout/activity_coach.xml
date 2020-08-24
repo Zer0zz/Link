@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".coach.CoachActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/loyout_margin">
+
+        <LinearLayout
+            android:layout_width="75dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/loyout_margin_8"
+            android:layout_marginRight="@dimen/loyout_margin_8"
+            android:background="@drawable/shape_stroke_round_four_dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.leconssoft.common.widgt.RoundImageView
+                android:id="@+id/upload_head_iv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:scaleType="center"
+                android:src="@mipmap/defaul_head_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/loyout_margin_5"
+            android:layout_marginBottom="@dimen/loyout_margin_5"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/coach_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:text="李教练"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/description_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loyout_margin_1"
+                android:gravity="center|start"
+                android:singleLine="true"
+                android:text="减脂|增肌|拉伸"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loyout_margin_3"
+                android:background="@mipmap/coach_level_bg"
+                android:gravity="center|start"
+                android:text="AAA金牌教练"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/loyout_margin_8"
+            android:layout_marginTop="@dimen/loyout_margin_8"
+            android:layout_marginBottom="@dimen/loyout_margin_5"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/loyout_margin_8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/coach_course_daiding_icon"
+                    android:gravity="center|left"
+                    android:text=" :待定" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/coach_course_selected_icon"
+                    android:gravity="center|left"
+                    android:text=" :选中" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/loyout_margin_8"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/coach_course_unselect_icon"
+                    android:gravity="center|left"
+                    android:text=" :可选" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:drawableLeft="@mipmap/coach_course_unselect_icon"
+                    android:gravity="center|left"
+                    android:text=" ：可选"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/coach_kecheng_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@mipmap/coach_course_data_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/month_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="七月\nMay"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day1_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周一\n21号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day2_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周二\n22号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day3_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周三\n23号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day4_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周四\n24号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day5_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周五\n25号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day6_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周六\n26号"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/day7_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周日\n27号"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical">
+
+                    <com.self.link.utils.wrapper.CourseView
+                        android:id="@+id/course_table"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:aspectRatio="0.7"
+                        app:column="8"
+                        app:dividerWidth="1dp"
+                        app:row="12" />
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@mipmap/personal_info_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/loyout_margin_8">
+
+        <Button
+            android:id="@+id/course_comfirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/daka_shape"
+            android:text="本周" />
+
+        <Button
+            android:id="@+id/course_cancle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/loyout_margin3"
+            android:background="@drawable/daka_shape"
+            android:text="下周" />
+
+    </LinearLayout>
+</LinearLayout>

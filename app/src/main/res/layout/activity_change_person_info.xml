@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_normal_backgroug"
+    android:orientation="vertical"
+    tools:context=".personal.change_info.ChangePersonInfoActivity">
+
+    <EditText
+        android:gravity="center_vertical"
+        android:id="@+id/change_et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/loyout_margin"
+        android:background="@color/white"
+        android:paddingTop="@dimen/loyout_margin_8"
+        android:paddingBottom="@dimen/loyout_margin_8"
+        android:paddingLeft="@dimen/loyout_margin"
+        android:paddingRight="@dimen/loyout_margin"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <View
+        android:background="@color/color_normal_backgroug"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

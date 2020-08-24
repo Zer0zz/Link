@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="toolbar_height">55dp</dimen>
+    <dimen name="loyout_margin_1">1dp</dimen>
+    <dimen name="loyout_margin_3">3dp</dimen>
+    <dimen name="loyout_margin_5">5dp</dimen>
+    <dimen name="loyout_margin_8">8dp</dimen>
+
+    <dimen name="loyout_margin">16dp</dimen>
+    <dimen name="loyout_margin2">32dp</dimen>
+    <dimen name="loyout_margin3">48dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Link</string>
+
+    <string name="title_activity_login_or_register">LoginOrRegisterActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_fri">首页</string>
+    <string name="title_sen">我</string>
+    <string name="upload_personal_pic">上传个人照片</string>
+    <string name="jsRooIidentify">健身房认证</string>
+    <string name="coath">教练</string>
+    <string name="course">课程</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aaa">测试</string>
+</resources>

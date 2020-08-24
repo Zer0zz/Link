@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="bg_blue">#ff32a8e2</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#ffffffff</color>
+    <color name="color_248bfe">#248bfe</color>
+    <color name="titleShadow">#0b829e</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="half_transparent">#16000000</color>
+    <color name="color_99000000">#99000000</color>
+    <color name="possible_result_points">#ffbd21</color>
+    <color name="result_view">#000000</color>
+    <color name="status_text">#ffffff</color>
+    <color name="viewfinder_mask">#50000000</color>
+    <color name="color_ec412b">#ec412b</color>
+    <color name="color_939ba4">#939ba4</color>
+    <color name="color_60000000">#60000000</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="color_f5f5f5">#f5f5f5</color>
+    <color name="color_222222">#222222</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_fffafa">#fffafa</color>
+    <color name="color_dddddd">#dddddd</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_0093dd">#0093dd</color>
+    <color name="color_e2e4e8">#e2e4e8</color>
+</resources>

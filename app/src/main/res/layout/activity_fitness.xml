@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/loyout_margin_8"
+    android:paddingRight="@dimen/loyout_margin_8"
+    tools:context=".fitness.FitnessActivity">
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginBottom="@dimen/loyout_margin_5"
+        app:image_scale_type="fit_xy"
+        app:indicator_drawable_selected="@mipmap/banner_select_point"
+        app:indicator_drawable_unselected="@mipmap/banner_unselect_point"
+        app:indicator_height="5dp"
+        app:indicator_margin="5dp"
+        app:indicator_width="5dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_personal_profile"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="@dimen/loyout_margin_8"
+        android:layout_marginRight="@dimen/loyout_margin_8"
+        android:background="@drawable/daka_shape"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/cart_icon" />
+
+        <TextView
+            android:id="@+id/renzheng_info_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="健身房申请认证"
+            android:textColor="@color/color_333333"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/identify_btn"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_login_bt"
+            android:text="认 证"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/mtab_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginTop="5dp"
+        android:elevation="5dp"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@android:color/black"
+        app:tabTextColor="@color/colorAccent">
+        <!--@color/colorAccent
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/course" />
+
+                <com.google.android.material.tabs.TabItem
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/coath" />-->
+
+    </com.google.android.material.tabs.TabLayout>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+</LinearLayout>
+

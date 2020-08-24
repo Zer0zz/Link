@@ -1,0 +1,38 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="HintSizeEditText">
+        <attr name="hintTextSize" format="dimension" />
+        <attr name="hintText" format="string" />
+    </declare-styleable>
+
+    <!--属性声明-->
+    <declare-styleable name="SeatView">
+        <attr name="columns" format="integer"/>
+        <attr name="rows" format="integer" />
+        <attr name="unselectIcon" format="reference" />
+        <attr name="selectedIcon" format="reference" />
+        <attr name="mySelectIcon" format="reference" />
+        <attr name="horspaceing" format="dimension"/>
+        <attr name="verspaceing" format="dimension"/>
+    </declare-styleable>
+    
+    <declare-styleable name="CourseView">
+        <attr name="column" format="integer"/>
+        <attr name="row" format="integer" />
+        <attr name="dividerWidth" format="dimension"/>
+        <attr name="aspectRatio" format="float"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MyNestedLinearLayout">
+        <attr name="layout_behavior" format="string"/>
+    </declare-styleable>
+</resources>

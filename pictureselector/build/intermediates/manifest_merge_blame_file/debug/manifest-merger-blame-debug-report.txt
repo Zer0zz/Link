@@ -1,0 +1,78 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.neusoft.pictureselector"
+4    android:versionCode="108"
+5    android:versionName="1.0.8" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:5:5-65
+11-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:5:22-62
+12    <uses-permission android:name="android.permission.FLASHLIGHT" />
+12-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:6:5-69
+12-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:6:22-66
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:7:5-81
+13-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:7:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:8:5-80
+14-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:8:22-77
+15
+16    <uses-feature
+16-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:10:5-12:35
+17        android:name="android.hardware.camera"
+17-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:11:9-47
+18        android:required="true" />
+18-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:12:9-32
+19    <uses-feature
+19-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:13:5-15:35
+20        android:name="android.hardware.camera.autofocus"
+20-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:14:9-57
+21        android:required="true" />
+21-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:15:9-32
+22
+23    <application>
+23-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:17:5-42:19
+24        <activity
+24-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:18:9-21:55
+25            android:name="com.neusoft.pictureselector.PhotoPickerActivity"
+25-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:19:13-75
+26            android:configChanges="orientation|screenSize"
+26-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:20:13-59
+27            android:theme="@style/PhotoPickerTheme" />
+27-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:21:13-52
+28        <activity
+28-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:22:9-24:55
+29            android:name="com.neusoft.pictureselector.PhotoPreviewActivity"
+29-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:23:13-76
+30            android:theme="@style/PhotoPickerTheme" />
+30-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:24:13-52
+31        <activity
+31-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:26:9-29:80
+32            android:name="com.neusoft.pictureselector.idcard.camera.CameraActivity"
+32-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:27:13-57
+33            android:configChanges="keyboardHidden|orientation|screenSize"
+33-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:28:13-74
+34            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
+34-->E:\workspace\Link\pictureselector\src\main\AndroidManifest.xml:29:13-77
+35
+36        <!--
+37        其中authorities可以自定义，不过一定要和java代码中FileProvider.getUriForFile里的的保持一致。
+38        <provider
+39            android:name="android.support.v4.content.FileProvider"
+40            android:authorities="${applicationId}.provider"
+41            android:exported="false"
+42            android:grantUriPermissions="true">
+43            <meta-data
+44                android:name="android.support.FILE_PROVIDER_PATHS"
+45                android:resource="@xml/provider_paths" />
+46        </provider>
+47        -->
+48    </application>
+49
+50</manifest>

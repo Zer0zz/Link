@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".register.RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="注册Link"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/nick_name_et"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/loyout_margin2"
+        android:background="@drawable/bg_register_bt"
+        android:gravity="left|center"
+        android:hint="昵称"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/loyout_margin"
+        android:paddingRight="@dimen/loyout_margin"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/loyout_margin"
+        android:background="@drawable/bg_register_bt"
+        android:gravity="left|center"
+        android:hint="手机号"
+        android:inputType="number"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/loyout_margin"
+        android:paddingRight="@dimen/loyout_margin"
+        android:textSize="18sp" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/link_account_et"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/loyout_margin"
+        android:background="@drawable/bg_register_bt"
+        android:gravity="left|center"
+        android:hint="Link账号"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/loyout_margin"
+        android:paddingRight="@dimen/loyout_margin"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/get_code_ll"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/phone_no_et"
+        android:layout_marginTop="@dimen/loyout_margin"
+        android:background="@drawable/bg_register_bt"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/get_code_ed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="left|center"
+            android:hint="验证码"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/loyout_margin"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/get_code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/loyout_margin_3"
+            android:paddingRight="@dimen/loyout_margin"
+            android:text="获取验证码"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/pwd_ed1"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/loyout_margin"
+        android:background="@drawable/bg_register_bt"
+        android:gravity="left|center"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/loyout_margin"
+        android:paddingRight="@dimen/loyout_margin"
+        android:textSize="18sp" />
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/pwd_ed2"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="@dimen/loyout_margin"
+        android:background="@drawable/bg_register_bt"
+        android:gravity="left|center"
+        android:hint="确认密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingLeft="@dimen/loyout_margin"
+        android:paddingRight="@dimen/loyout_margin"
+        android:textSize="18sp" />
+
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_bt"
+        android:text="注 册"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:elevation="5dp" />
+
+
+</LinearLayout>
