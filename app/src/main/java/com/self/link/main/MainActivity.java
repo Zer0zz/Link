@@ -2,12 +2,13 @@ package com.self.link.main;
 
 import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
 import android.os.Bundle;
 import android.view.KeyEvent;
 import android.view.MenuItem;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.viewpager.widget.ViewPager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.leconssoft.common.BaseMvp.BaseMvpAct;
@@ -24,11 +25,6 @@ import com.self.link.service.LinkService;
 import com.self.link.utils.PermissionsUtils;
 
 import java.util.List;
-
-import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.viewpager.widget.ViewPager;
 
 import butterknife.BindView;
 
