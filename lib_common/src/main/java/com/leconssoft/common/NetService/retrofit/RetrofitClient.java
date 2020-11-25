@@ -36,7 +36,7 @@ import rx.android.schedulers.AndroidSchedulers;
 public class RetrofitClient {
 
 
-    private static final int DEFAULT_TIMEOUT = 20;
+    private static final int DEFAULT_TIMEOUT = 10;
 
     private NetUrlService apiService;
 

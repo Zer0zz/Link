@@ -41,9 +41,11 @@ public class NetInfoUtils {
             @Override
             public void onMenuClick(int index) {
                 if (index == 0) {
-
+                    if (settingNetworkResult != null)
+                        settingNetworkResult.refuseSetting();
                 } else if (index == 1) {
-                    settingNetworkResult.goSettingNetwork();
+                    if (settingNetworkResult != null)
+                        settingNetworkResult.goSettingNetwork();
                     Intent intent = new Intent();
                     intent.setAction(Settings.ACTION_DATA_ROAMING_SETTINGS);
                     context.startActivity(intent);
@@ -53,7 +55,8 @@ public class NetInfoUtils {
     }
 
 
-    public interface OnSettingNetworkResult{
+    public interface OnSettingNetworkResult {
         void goSettingNetwork();
+        void refuseSetting();
     }
 }
